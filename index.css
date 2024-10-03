@@ -1,0 +1,114 @@
+
+/* Basic reset and body styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background: url('/back.jpeg') no-repeat center center;
+    background-size: cover;
+    font-size: larger;
+}
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0 20px; /* Adjusted padding for smaller screens */
+}
+.login-box {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+}
+.login-box img {
+    width: 100%;
+    height: auto;
+}
+.login-box input[type="text"], .login-box input[type="password"] {
+    width: calc(100% - 40px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.login-box #sub {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.login-box #sub:hover {
+    background-color: #0056b3;
+}
+.login-box .forgot-links {
+    margin-top: 10px;
+}
+.login-box .forgot-links a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 12px;
+}
+.login-box .forgot-links a:hover {
+    text-decoration: underline;
+}
+.login-box .powered-by {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #666;
+}
+
+/* Button styling */
+.button-7 {
+    background-color: #0095ff;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    box-shadow: rgba(255, 255, 255, .4) 0 1px 0 0 inset;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system, system-ui, "Segoe UI", "Liberation Sans", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.15385;
+    padding: 5px 0.5em;
+    text-align: center;
+    text-decoration: none;
+}
+.button-7:hover {
+    background-color: #07c;
+}
+.button-7:active {
+    background-color: #0064bd;
+    box-shadow: none;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .login-box {
+        width: 90%; /* Make the login box take more width on smaller devices */
+        padding: 15px;
+    }
+    .login-container {
+        padding-right: 0; /* Remove excessive padding for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .login-box {
+        width: 100%;
+        padding: 10px;
+    }
+    body, html {
+        font-size: medium; /* Adjust font size for smaller devices */
+    }
+}
